@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Indian Recipe Finder</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Indian Recipe Finder</h1>
+    <div class="container">
+        <h1>Recipe Generator</h1>
+        
+        <div class="input-section">
+            <label for="ingredients">Enter ingredients (comma-separated):</label>
+            <input type="text" id="ingredients" placeholder="e.g., chicken, rice, tomatoes">
+            
+            <div class="buttons">
+                <button class="btn-primary" onclick="searchRecipes()">Find Recipes</button>
+                <button class="btn-secondary" onclick="clearResults()">Clear</button>
+            </div>
+        </div>
 
-  <input type="text" id="searchBar" placeholder="Search by name or ingredient...">
-  <select id="regionFilter">
-    <option value="">All Regions</option>
-    <option value="North India">North India</option>
-    <option value="South India">South India</option>
-  </select>
-  <select id="typeFilter">
-    <option value="">All Types</option>
-    <option value="Main Course">Main Course</option>
-    <option value="Breakfast">Breakfast</option>
-    <option value="Dessert">Dessert</option>
-  </select>
-  <button onclick="searchRecipes()">Search</button>
+        <div class="input-section">
+            <label>Or upload an image of ingredients:</label>
+            <div class="image-upload" onclick="document.getElementById('imageInput').click()">
+                <input type="file" id="imageInput" accept="image/*" onchange="handleImageUpload(event)">
+                <div class="upload-text">Click to upload image</div>
+            </div>
+        </div>
 
-  <div id="results"></div>
+        <div id="debugInfo" class="debug-info" style="display: none;"></div>
 
-  <script src="app.js"></script>
+        <div class="results-section">
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
-
 </html>
