@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="recipe"></div>
+
+  <script>
+    let recipes = [];
+
+    fetch("recipes.json")
+      .then(res => res.json())
+      .then(data => {
+        recipes = data;
+        loadRecipe();
+      });
+
+    function loadRecipe() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = parseInt(urlParams.get("id"));
+      const recipe = recipes.find(r => r.id === id);
+
+      if (!recipe) {
+        document.getElementById("recipe").innerHTML = "<p>Recipe not found.</p>";
+        return;
+      }
+
+      document.getElementById("recipe").innerHTML = `
+        <h1>${recipe.name}</h1>
+        <p><b>Region:</b> ${recipe.region}</p>
+        <p><b>Type:</b> ${recipe.type}</p>
+        <h3>Ingredients</h3>
+        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
+        <h3>Instructions</h3>
+        <p>${recipe.instructions}</p>
+        <a href="index.html">⬅ Back to Recipes</a>
+      `;
+    }
+  </script>
+</body>
+</html>

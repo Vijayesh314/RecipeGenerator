@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Chole Bhature",
+    "region": "North India",
+    "type": "Main Course",
+    "ingredients": ["chickpeas", "onion", "tomato", "ginger", "garlic", "bhatura flour", "yogurt", "spices"],
+    "instructions": "Soak chickpeas overnight and cook. Prepare onion-tomato gravy with spices, add chickpeas. For bhatura, knead flour with yogurt, rest, and deep-fry."
+  },
+  {
+    "id": 2,
+    "name": "Masala Dosa",
+    "region": "South India",
+    "type": "Breakfast",
+    "ingredients": ["rice", "urad dal", "potatoes", "onion", "green chili", "mustard seeds", "curry leaves"],
+    "instructions": "Soak and ferment rice & dal batter. Cook dosa on a tawa. Prepare potato masala with onion, chili, curry leaves. Fill dosa with masala."
+  },
+  {
+    "id": 3,
+    "name": "Gulab Jamun",
+    "region": "North India",
+    "type": "Dessert",
+    "ingredients": ["milk powder", "flour", "ghee", "milk", "sugar", "cardamom", "rose water"],
+    "instructions": "Knead dough with milk powder, flour, and ghee. Fry small balls until golden. Soak in sugar syrup flavored with cardamom and rose water."
+  },
+  {
+    "id": 4,
+    "name": "Sambar Rice",
+    "region": "South India",
+    "type": "Main Course",
+    "ingredients": ["rice", "toor dal", "tamarind", "sambar powder", "drumstick", "brinjal", "tomato", "curry leaves", "mustard seeds"],
+    "instructions": "Cook rice and dal together. Prepare tamarind extract with vegetables and sambar powder. Mix rice and dal with the sambar. Temper with mustard seeds and curry leaves."
+  },
+  {
+    "id": 5,
+    "name": "Keerai Rice (Spinach Rice)",
+    "region": "South India",
+    "type": "Main Course",
+    "ingredients": ["rice", "spinach", "onion", "green chili", "cumin", "garlic", "mustard seeds", "curry leaves"],
+    "instructions": "Cook rice separately. Sauté chopped spinach with onion, chili, cumin, and garlic. Mix spinach masala into rice. Temper with mustard seeds and curry leaves."
+  },
+  {
+    "id": 6,
+    "name": "Vegetable Biryani",
+    "region": "South India",
+    "type": "Main Course",
+    "ingredients": ["basmati rice", "carrot", "beans", "peas", "potato", "onion", "tomato", "ginger-garlic paste", "biryani masala", "mint leaves", "curd"],
+    "instructions": "Sauté onion, ginger-garlic paste, and tomato with spices. Add vegetables and yogurt. Layer with half-cooked rice. Cook on dum until flavors blend."
+  },
+  {
+    "id": 7,
+    "name": "Ven Pongal",
+    "region": "South India",
+    "type": "Breakfast",
+    "ingredients": ["rice", "moong dal", "ginger", "green chili", "peppercorns", "ghee", "cashews", "curry leaves"],
+    "instructions": "Cook rice and moong dal until soft. Fry ginger, chili, pepper, curry leaves, and cashews in ghee. Mix seasoning into rice-dal mixture."
+  },
+  {
+    "id": 8,
+    "name": "Upma",
+    "region": "South India",
+    "type": "Breakfast",
+    "ingredients": ["rava (semolina)", "onion", "green chili", "ginger", "curry leaves", "mustard seeds", "cashews", "ghee"],
+    "instructions": "Roast rava until golden. In another pan, sauté onion, chili, ginger, curry leaves, and cashews. Add water, salt, and roasted rava. Stir until thick."
+  },
+  {
+    "id": 9,
+    "name": "Peanut Chutney",
+    "region": "South India",
+    "type": "Side Dish",
+    "ingredients": ["peanuts", "green chili", "garlic", "curry leaves", "mustard seeds", "oil", "salt"],
+    "instructions": "Roast peanuts, chili, and garlic. Grind into smooth paste with water. Temper with mustard seeds and curry leaves."
+  },
+  {
+    "id": 10,
+    "name": "Coconut Chutney",
+    "region": "South India",
+    "type": "Side Dish",
+    "ingredients": ["fresh coconut", "green chili", "ginger", "roasted chana dal", "curry leaves", "mustard seeds"],
+    "instructions": "Grind coconut, chili, ginger, and roasted chana dal into a paste. Temper with mustard seeds and curry leaves."
+  },
+  {
+    "id": 11,
+    "name": "Tomato Chutney",
+    "region": "South India",
+    "type": "Side Dish",
+    "ingredients": ["tomato", "onion", "red chili", "garlic", "mustard seeds", "curry leaves"],
+    "instructions": "Sauté tomato, onion, chili, and garlic. Grind to smooth paste. Temper with mustard seeds and curry leaves."
+  },
+  {
+    "id": 12,
+    "name": "Potato Chutney",
+    "region": "South India",
+    "type": "Side Dish",
+    "ingredients": ["potatoes", "onion", "green chili", "ginger", "curry leaves", "mustard seeds", "oil"],
+    "instructions": "Boil potatoes and mash. Sauté onion, chili, ginger, and curry leaves. Blend with mashed potatoes into a chutney. Temper with mustard seeds."
+  },
+  {
+    "id": 13,
+    "name": "Idli",
+    "region": "South India",
+    "type": "Breakfast",
+    "ingredients": ["rice", "urad dal", "fenugreek seeds", "salt"],
+    "instructions": "Soak rice, dal, and fenugreek. Grind into batter and ferment overnight. Steam batter in idli molds until soft and fluffy."
+  },
+  {
+    "id": 14,
+    "name": "Aloo Paratha",
+    "region": "North India",
+    "type": "Breakfast",
+    "ingredients": ["wheat flour", "potatoes", "onion", "green chili", "cumin", "ghee", "spices"],
+    "instructions": "Boil and mash potatoes with spices. Stuff into dough balls, roll into flatbreads, and cook with ghee on a tawa."
+  },
+  {
+    "id": 15,
+    "name": "Rajma Chawal",
+    "region": "North India",
+    "type": "Lunch",
+    "ingredients": ["rajma (kidney beans)", "onion", "tomato", "ginger", "garlic", "spices", "rice"],
+    "instructions": "Soak rajma overnight and cook. Prepare onion-tomato gravy with spices, add rajma. Serve with steamed rice."
+  },
+  {
+    "id": 16,
+    "name": "Paneer Butter Masala",
+    "region": "North India",
+    "type": "Dinner",
+    "ingredients": ["paneer", "tomato", "onion", "ginger-garlic paste", "butter", "cream", "garam masala"],
+    "instructions": "Cook onion and tomato with spices. Blend into smooth gravy. Add paneer cubes, butter, and cream. Simmer until rich and creamy."
+  },
+  {
+    "id": 17,
+    "name": "Chapati with Vegetable Curry",
+    "region": "North India",
+    "type": "Dinner",
+    "ingredients": ["wheat flour", "vegetables", "onion", "tomato", "ginger-garlic paste", "spices"],
+    "instructions": "Prepare soft chapati dough, roll and cook on a tawa. Make mixed vegetable curry with onion-tomato base. Serve together."
+  },
+  {
+    "id": 18,
+    "name": "Curd Rice",
+    "region": "South India",
+    "type": "Lunch",
+    "ingredients": ["rice", "curd", "green chili", "ginger", "curry leaves", "mustard seeds"],
+    "instructions": "Mash cooked rice and mix with curd. Temper with chili, ginger, curry leaves, and mustard seeds. Chill before serving."
+  },
+  {
+    "id": 19,
+    "name": "Poori with Potato Masala",
+    "region": "South India",
+    "type": "Breakfast",
+    "ingredients": ["wheat flour", "oil", "potatoes", "onion", "green chili", "curry leaves", "spices"],
+    "instructions": "Knead dough with wheat flour and deep-fry into puffed pooris. Make potato masala with onion, chili, curry leaves, and spices. Serve hot."
+  },
+  {
+    "id": 20,
+    "name": "Fish Curry",
+    "region": "South India",
+    "type": "Dinner",
+    "ingredients": ["fish", "tamarind", "onion", "tomato", "garlic", "curry leaves", "chili powder", "coconut oil"],
+    "instructions": "Make tamarind-based gravy with onion, tomato, and spices. Add fish pieces and simmer until cooked. Finish with curry leaves and coconut oil."
+  }
+]

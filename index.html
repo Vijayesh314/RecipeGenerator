@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍛 Indian Recipe Finder</h1>
+
+  <input type="text" id="searchBar" placeholder="Search by name or ingredient...">
+  <select id="regionFilter">
+    <option value="">All Regions</option>
+    <option value="North India">North India</option>
+    <option value="South India">South India</option>
+  </select>
+  <select id="typeFilter">
+    <option value="">All Types</option>
+    <option value="Main Course">Main Course</option>
+    <option value="Breakfast">Breakfast</option>
+    <option value="Dessert">Dessert</option>
+  </select>
+  <button onclick="searchRecipes()">Search</button>
+
+  <div id="results"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
