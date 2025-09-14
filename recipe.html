@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Recipe Details</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="recipe"></div>
+    <div class="container">
+        <div class="recipe-header">
+            <button class="btn-secondary" onclick="goBack()">← Back to Search</button>
+        </div>
+        
+        <div id="recipeDetails" class="recipe-details">
+            <!-- Recipe details will be loaded here -->
+        </div>
+    </div>
 
-  <script>
-    let recipes = [];
+    <script src="app.js"></script>
+    <script>
+        // Load recipe details on page load
+        window.addEventListener('load', async function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const recipeId = urlParams.get('id');
+            if (recipeId) {
+                // Show loading message
+                document.getElementById('recipeDetails').innerHTML = 
+                    '<div class="no-results">Loading recipe...</div>';
+                
+                // Load recipe details (this will load recipes first if needed)
+                await loadRecipeDetails(recipeId);
+            } else {
+                document.getElementById('recipeDetails').innerHTML = 
+                    '<div class="no-results">No recipe selected</div>';
+            }
+        });
 
-    fetch("recipes.json")
-      .then(res => res.json())
-      .then(data => {
-        recipes = data;
-        loadRecipe();
-      });
-
-    function loadRecipe() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const id = parseInt(urlParams.get("id"));
-      const recipe = recipes.find(r => r.id === id);
-
-      if (!recipe) {
-        document.getElementById("recipe").innerHTML = "<p>Recipe not found.</p>";
-        return;
-      }
-
-      document.getElementById("recipe").innerHTML = `
-        <h1>${recipe.name}</h1>
-        <p><b>Region:</b> ${recipe.region}</p>
-        <p><b>Type:</b> ${recipe.type}</p>
-        <h3>Ingredients</h3>
-        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
-        <h3>Instructions</h3>
-        <p>${recipe.instructions}</p>
-        <a href="index.html">⬅ Back to Recipes</a>
-      `;
-    }
-  </script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
 </body>
 </html>
